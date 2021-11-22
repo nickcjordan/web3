@@ -1,0 +1,97 @@
+{
+  "address": "0x3aAde2dCD2Df6a8cAc689EE797591b2913658659",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "complete",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "completed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isComplete",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "clearer",
+          "type": "address"
+        }
+      ],
+      "name": "reset",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x5dc1b19ca99c377faca05ffcc81ed610df5ed0c5bd90cff7c5eee246d5a75d91",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x3aAde2dCD2Df6a8cAc689EE797591b2913658659",
+    "transactionIndex": 0,
+    "gasUsed": "127717",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xd128f131536d6231f4ba5db454d9487ce4c52b2eec5b908a9c9188051a74e93f",
+    "transactionHash": "0x5dc1b19ca99c377faca05ffcc81ed610df5ed0c5bd90cff7c5eee246d5a75d91",
+    "logs": [],
+    "blockNumber": 333,
+    "cumulativeGasUsed": "127717",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "2275badb147a8cfaaef99753d96f1e66",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.7+commit.b8d736ae\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"complete\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"completed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isComplete\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"clearer\",\"type\":\"address\"}],\"name\":\"reset\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/ExampleExternalContract.sol\":\"ExampleExternalContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ExampleExternalContract.sol\":{\"content\":\"pragma solidity >=0.6.0 <0.7.0;\\r\\n\\r\\ncontract ExampleExternalContract {\\r\\n\\r\\n  bool public completed;\\r\\n\\r\\n  function complete() public payable {\\r\\n    completed = true;\\r\\n  }\\r\\n\\r\\n  function reset(address payable clearer) public {\\r\\n    clearer.transfer(address(this).balance);\\r\\n    completed = false;\\r\\n  }\\r\\n\\r\\n  function isComplete() public returns (bool) {\\r\\n    return completed;\\r\\n  }\\r\\n\\r\\n}\\r\\n\",\"keccak256\":\"0xc1794a6a65f02a7a2d4fe0968159cf5b552bd37c78007281543206efe40dd3f6\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610159806100206000396000f3fe60806040526004361061003f5760003560e01c8063522e1177146100445780636b8ab97d1461004e5780639d9a7fe914610081578063b2fa1c9e146100aa575b600080fd5b61004c6100bf565b005b34801561005a57600080fd5b5061004c6004803603602081101561007157600080fd5b50356001600160a01b03166100ce565b34801561008d57600080fd5b50610096610111565b604080519115158252519081900360200190f35b3480156100b657600080fd5b5061009661011a565b6000805460ff19166001179055565b6040516001600160a01b038216904780156108fc02916000818181858888f19350505050158015610103573d6000803e3d6000fd5b50506000805460ff19169055565b60005460ff1681565b60005460ff169056fea264697066735822122097d616ff76e85783b1143f85192847b52552c888853058afffd96a65f941e7d864736f6c63430006070033",
+  "deployedBytecode": "0x60806040526004361061003f5760003560e01c8063522e1177146100445780636b8ab97d1461004e5780639d9a7fe914610081578063b2fa1c9e146100aa575b600080fd5b61004c6100bf565b005b34801561005a57600080fd5b5061004c6004803603602081101561007157600080fd5b50356001600160a01b03166100ce565b34801561008d57600080fd5b50610096610111565b604080519115158252519081900360200190f35b3480156100b657600080fd5b5061009661011a565b6000805460ff19166001179055565b6040516001600160a01b038216904780156108fc02916000818181858888f19350505050158015610103573d6000803e3d6000fd5b50506000805460ff19169055565b60005460ff1681565b60005460ff169056fea264697066735822122097d616ff76e85783b1143f85192847b52552c888853058afffd96a65f941e7d864736f6c63430006070033",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 90,
+        "contract": "contracts/ExampleExternalContract.sol:ExampleExternalContract",
+        "label": "completed",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}

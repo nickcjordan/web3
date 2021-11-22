@@ -1,0 +1,8 @@
+{
+  "localhost_ExampleExternalContractAddress": "0x3aAde2dCD2Df6a8cAc689EE797591b2913658659",
+  "localhost_StakerAddress": "0xab16A69A5a8c12C732e0DEFF4BE56A70bb64c926",
+  "kovan_ExampleExternalContractAddress": "0xdF3068136e17C3159775e76004c5CfaD6FaEa1F5",
+  "kovan_StakerAddress": "0xE5aC52A6892D0e944DfD48610eb130cAC6f7Eb90",
+  "ropsten_ExampleExternalContractAddress": "0x1f8E7dD57C4450472Ebcef4823d6d7327EdcCbee",
+  "ropsten_StakerAddress": "0x3a0DAA3407406CE8E4Ca6F7c6A1cEC084444387F"
+}
