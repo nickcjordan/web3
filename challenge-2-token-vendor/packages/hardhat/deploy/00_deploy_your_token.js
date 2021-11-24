@@ -16,15 +16,15 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
 
   const yourToken = await ethers.getContract("YourToken", deployer);
 
-  // Todo: transfer tokens to frontend address
-  const result = await yourToken.transfer("0xC061379C6b397c7Bbe8a31Ab62e6C1f45b3ace3B", ethers.utils.parseEther("1000") );
-
+  // const vendor = await ethers.getContract("Vendor", deployer);
+  // const result = await yourToken.transfer(vendor.address, ethers.utils.parseEther("1000") );
+  
+  // const yourContract = await ethers.getContractAt('YourContract', "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853");
   // ToDo: To take ownership of yourContract using the ownable library uncomment next line and add the
   // address you want to be the owner.
-  // yourContract.transferOwnership(YOUR_ADDRESS_HERE);
+  // vendor.transferOwnership("0xC061379C6b397c7Bbe8a31Ab62e6C1f45b3ace3B");
 
   // if you want to instantiate a version of a contract at a specific address!
-  // const yourContract = await ethers.getContractAt('YourContract', "0xaAC799eC2d00C013f1F11c37E654e59B0429DF6A");
 
   // If you want to send value to an address from the deployer
   // const deployerWallet = ethers.provider.getSigner()
