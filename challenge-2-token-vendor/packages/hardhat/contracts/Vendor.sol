@@ -23,9 +23,10 @@ contract Vendor is Ownable {
   }
 
   // ToDo: create a withdraw() function that lets the owner withdraw ETH
-  function withdraw() public payable {
+  // function withdraw(uint amount) public payable {
+  function withdraw(uint weiToWithdraw) public {
     require(msg.sender == owner(), "You must be the owner to withdraw");
-    payable(msg.sender).transfer(address(this).balance);
+    payable(msg.sender).transfer(weiToWithdraw);
   }
   
 
